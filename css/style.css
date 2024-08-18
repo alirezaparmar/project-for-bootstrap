@@ -1,0 +1,35 @@
+div{
+    position: relative;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 80px;
+    cursor: pointer;
+}.text{
+    color: aqua;
+    -webkit-text-stroke: 1px rgb(red, green, blue);
+}
+.hover-text{
+    position: absolute;
+    inset: 0;
+    width: 0%;
+    color: var(--clr);
+    overflow: hidden;
+    border-right: 6px solid var(--clr);
+    transition: 0.5s ease-in-out;
+}
+div:hover .hover-text{
+    width: 100%;
+    filter: drop-shadow(0 0 40px var(--clr));
+}
+
+.sidebar{
+    height: 100vh;
+    background: linear-gradient(rgba(180, 224, 22, 0.5), rgba(150, 165, 13, 0.5)), url(../img/car-american-3.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 7px 25px #7b1212;
+    
+
+}
